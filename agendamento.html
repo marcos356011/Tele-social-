@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tele Social - Agendamento</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="profissional.jpg" alt="Logo Tele Social" class="logo-img"> <!-- Espaço para a logo -->
+                <div class="logo-title blink">Tele Social</div> <!-- Título piscando -->
+            </div>
+            <div class="hamburger-menu" onclick="toggleMenu()">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#atendimento">Atendimento</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#agendamento.html">Agendamento</a></li> <!-- Aba Agendamento -->
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção de Agendamento -->
+    <section id="agendamento" class="section bg-light">
+        <div class="container">
+            <h2>Agendamento de Atendimento</h2>
+            <p>Escolha uma data disponível no calendário para agendar seu atendimento.</p>
+
+            <!-- Calendário -->
+            <div class="calendar-container">
+                <div id="calendar"></div>
+                <div id="selected-date"></div>
+                <button class="btn" onclick="registrarAgendamento()">Registrar Agendamento</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tele Social. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
